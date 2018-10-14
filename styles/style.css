@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    background: #d3cdcd;
+    text-align: center;
+    padding: 25px 70px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px 50px;
+    overflow: hidden;
+}
+
+main img {
+    float: left;
+    max-width: 450px;
+    max-height: 350px;
+    margin-right: 20px;
+}
+
+main .about-me-list {
+    list-style: circle;
+}
+
+footer {
+    background: #73A8C2;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer .social-list li {
+    display: inline-block;
+    margin: 10px 10px 0 10px;
+}
