@@ -90,5 +90,62 @@
         <td colspan="16" class="boss-name">Заступник директора з навчально-методичної роботи, ст. викладач ____________________ В. М. Власенко</td>
     </tr>
 </table>
+<h1>Profile edit page</h1>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Basic info</legend>
+        <ul>
+            <li><label for="id-number">ID</label><input type="number" name="id-number" id="id-number" placeholder="725" disabled min="0"></li>
+            <li><label for="first-name">First name</label><input type="text" name="first-name" id="first-name"></li>
+            <li><label for="last-name">Last name</label><input type="text" name="last-name" id="last-name"></li>
+            <li><label for="password">Password</label><input type="password" name="password" id="password"></li>
+            <li><label for="phone-number">Phone</label><input type="tel" name="phone-number" id="phone-number" placeholder="380"></li>
+            <li>
+                <label for="email">Email</label><input type="email" name="email" id="email" placeholder="myemail@placeholder.com"><br>
+                <input type="checkbox" name="keep-email-private" id="keep-email-private"><label for="keep-email-private">Keep my email address private<br>
+                Well remove your public profile email and use 1978331+username@users.noreplylocalhost</label>
+            </li>
+            <li><label for="birth-date">DOB</label><input type="date" name="birth-date" id="birth-date"></li>
+            <li><label for="blog-url">Blog url</label><input type="url" name="birth-date" id="blog-url" placeholder="http://"></li>
+            <li><label for="about-me">About me</label><br><textarea name="about-me" id="about-me" cols="30" rows="10"></textarea></li>
+            <li><label for="upload-file">Profile picture</label><input type="file" id="upload-file"></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Professional info</legend>
+        <ul>
+            <li>Desire to study<input type="range" name="desire-study-range" min="1" max="10"></li>
+            <li><label for="experience">Experience</label><input type="number" name="experience" id="experience" min="0">years</li>
+            <li>
+                Development experience<br>
+                <label><input type="radio" name="dev-experience" value="Learning">Learning to Program</label><br>
+                <label><input type="radio" name="dev-experience" value="Junior">Junior Developer</label><br>
+                <label><input type="radio" name="dev-experience" value="Mid-Level">Mid-Level Developer</label><br>
+                <label><input type="radio" name="dev-experience" value="Senior">Senior Developer</label>
+            </li>
+            <li>
+                Country
+                <select name="country">
+                    <option>- Choose your country -</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Spain">Spain</option>
+                </select>
+            </li>
+            <li>
+                Skills<br>
+                <label><input type="checkbox" name="skills" value="HTML">HTML</label><br>
+                <label><input type="checkbox" name="skills" value="CSS">CSS</label><br>
+                <label><input type="checkbox" name="skills" value="JavaScript">JavaScript</label><br>
+                <label><input type="checkbox" name="skills" value="Ruby">Ruby</label><br>
+                <label><input type="checkbox" name="skills" value="Scala">Scala</label><br>
+                <label><input type="checkbox" name="skills" value="Haskell">Haskell</label><br>
+            </li>
+        </ul>
+    </fieldset>
+    <button type="reset">Cancel</button>
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
