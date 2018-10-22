@@ -111,7 +111,7 @@
                 Well remove your public profile email and use 1978331+username@users.noreplylocalhost</label>
             </li>
             <li><label for="birth-date">DOB</label><input type="date" name="birth-date" id="birth-date"></li>
-            <li><label for="blog-url">Blog url</label><input type="url" name="birth-date" id="blog-url" placeholder="http://"></li>
+            <li><label for="blog-url">Blog url</label><input type="url" name="blog-url" id="blog-url" placeholder="http://"></li>
             <li><label for="about-me">About me</label><br><textarea name="about-me" id="about-me" cols="30" rows="10"></textarea></li>
             <li><label for="upload-file">Profile picture</label><input type="file" id="upload-file"></li>
         </ul>
@@ -133,8 +133,9 @@
             <li>
                 Country
                 <select name="country">
-                    <option>- Choose your country -</option>
+                    <option disabled selected>- Choose your country -</option>
                     <option value="Ukraine">Ukraine</option>
+                    <option disabled>---------------</option>
                     <option value="USA">USA</option>
                     <option value="Thailand">Thailand</option>
                     <option value="Spain">Spain</option>
