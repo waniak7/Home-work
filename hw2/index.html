@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form and table</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<table>
+    <!-- table header -->
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th>I-A</th>
+            <th>I-Б</th>
+            <th colspan="2">I-B</th>
+            <th>I-I</th>
+            <th>II-A</th>
+            <th>II-Б</th>
+            <th colspan="2">II-B</th>
+            <th colspan="2">III-A</th>
+            <th colspan="2">III-B</th>
+            <th>III-I</th>
+            <th rowspan="2"></th>
+        </tr>
+        <tr>
+            <td colspan="2">підгрупа І</td>
+            <td>підгрупа І</td>
+            <td>підгрупа II</td>
+            <td>підгрупа ІI</td>
+            <td colspan="2">підгрупа І</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІI</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІI</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІI</td>
+            <td>підгрупа ІI</td>
+        </tr>
+    </thead>
+    <tbody>
+    <!-- table body/ 1rd row -->
+        <tr>
+            <th>1</th>
+            <td colspan="5"> Фізичне виховання</td>
+            <td colspan="2">"Вища математика для фізиків доц. Корнієнко С.В. ауд. 258"</td>
+            <td colspan="2">"Прикладна механіка та основи конструювання доц.Луценко Г.В. ауд. 279"</td>
+            <td colspan="2">"Ділова іноземна мова ст.викл. Зінченко А.В. ауд. 267"</td>
+            <td colspan="3">"Теорія ймовірностей та випадкові процеси доц. Ральченко С.А. ауд. 136"</td>
+            <th>1</th>
+        </tr>
+        <!-- 2nd row -->
+        <tr>
+            <th>2</th>
+            <td colspan="2">"Математичний аналіз доц. Лила Д.М. ауд. 241"</td>
+            <td></td>
+            <td>"Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131"</td>
+            <td>"Дискретна математика доц. Атамась В.В. ауд. 282"</td>
+            <td colspan="2">"Педагогіка доц. Лещенко І.Т. ауд. 258"</td>
+            <td>"Іноземна мова викл. Зінченко А.В. ауд. 242"</td>
+            <td></td>
+            <td colspan="2">"Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268"</td>
+            <td colspan="2"></td>
+            <td>"Вища математика доц. Босовський М.В. ауд. 243"</td>
+            <th>2</th>
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <th>3</th>
+            <td colspan="2">"Математичний аналіз доц. Лила Д.М. ауд. 241"</td>
+            <td>"Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131"</td>
+            <td></td>
+            <td>"Дискретна математика доц. Атамась В.В. ауд. 282"</td>
+            <td colspan="2">"Педагогіка доц. Лещенко І.Т. ауд. 258"</td>
+            <td></td>
+            <td>"Іноземна мова викл. Зінченко А.В. ауд. 242"</td>
+            <td colspan="2">"Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268"</td>
+            <td colspan="2"></td>
+            <td>"Вища математика доц. Босовський М.В. ауд. 243"</td>
+            <th>3</th>
+        </tr>
+        <!-- 4th row -->
+        <tr>
+            <th>4</th>
+            <td colspan="2"></td>
+            <td colspan="2">"Фізика ст.викл. Власенко В.М. ауд. 279"</td>
+            <td colspan="10"></td>
+            <th>4</th>
+        </tr>
+    </tbody>
+    <!-- table footer -->
+    <tfoot>
+        <tr>
+            <td colspan="16" class="boss-name">Заступник директора з навчально-методичної роботи, ст. викладач ____________________ В. М. Власенко</td>
+        </tr>
+    </tfoot>
+</table>
+<h1>Profile edit page</h1>
+<form action="https://postman-echo.com/post" method="post">
+    <fieldset>
+        <legend>Basic info</legend>
+        <ul>
+            <li><label for="id-number">ID</label><input type="number" name="id-number" id="id-number" placeholder="725" disabled min="0"></li>
+            <li><label for="first-name">First name</label><input type="text" name="first-name" id="first-name"></li>
+            <li><label for="last-name">Last name</label><input type="text" name="last-name" id="last-name"></li>
+            <li><label for="password">Password</label><input type="password" name="password" id="password"></li>
+            <li><label for="phone-number">Phone</label><input type="tel" name="phone-number" id="phone-number" placeholder="380"></li>
+            <li>
+                <label for="email">Email</label><input type="email" name="email" id="email" placeholder="myemail@placeholder.com"><br>
+                <input type="checkbox" name="keep-email-private" id="keep-email-private"><label for="keep-email-private">Keep my email address private<br>
+                Well remove your public profile email and use 1978331+username@users.noreplylocalhost</label>
+            </li>
+            <li><label for="birth-date">DOB</label><input type="date" name="birth-date" id="birth-date"></li>
+            <li><label for="blog-url">Blog url</label><input type="url" name="blog-url" id="blog-url" placeholder="http://"></li>
+            <li><label for="about-me">About me</label><br><textarea name="about-me" id="about-me" cols="30" rows="10"></textarea></li>
+            <li><label for="upload-file">Profile picture</label><input type="file" id="upload-file"></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Professional info</legend>
+        <ul>
+            <li>Desire to study<input type="range" name="desire-study-range" min="1" max="10"></li>
+            <li><label for="experience">Experience</label><input type="number" name="experience" id="experience" min="0">years</li>
+            <li>
+                <span>Development experience</span>
+                <ul>
+                    <li><label><input type="radio" name="dev-experience" value="Learning">Learning to Program</label></li>
+                    <li><label><input type="radio" name="dev-experience" value="Junior">Junior Developer</label></li>
+                    <li><label><input type="radio" name="dev-experience" value="Mid-Level">Mid-Level Developer</label></li>
+                    <li><label><input type="radio" name="dev-experience" value="Senior">Senior Developer</label></li>
+                </ul>
+            </li>
+            <li>
+                <span>Country</span>
+                <select name="country">
+                    <option disabled selected>- Choose your country -</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option disabled>---------------</option>
+                    <option value="USA">USA</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Spain">Spain</option>
+                </select>
+            </li>
+            <li>
+                <span>Skills</span>
+                <ul>
+                    <li><label><input type="checkbox" name="skills" value="HTML">HTML</label></li>
+                    <li><label><input type="checkbox" name="skills" value="CSS">CSS</label></li>
+                    <li><label><input type="checkbox" name="skills" value="JavaScript">JavaScript</label></li>
+                    <li><label><input type="checkbox" name="skills" value="Ruby">Ruby</label></li>
+                    <li><label><input type="checkbox" name="skills" value="Scala">Scala</label></li>
+                    <li><label><input type="checkbox" name="skills" value="Haskell">Haskell</label></li>
+                </ul>
+            </li>
+        </ul>
+    </fieldset>
+    <button type="reset">Cancel</button>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
