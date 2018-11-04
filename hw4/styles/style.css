@@ -234,3 +234,114 @@ a.lang-switch::after {
     width: 100%;
 }
 
+/***** footer *****/
+
+.border-footer {
+    position: relative;
+    height: 4px;
+    background: linear-gradient(to left, #bf1e2e, #f1592a);
+}
+
+.scroll-up {
+    position: absolute;
+    right: 100px;
+    top: -42px;
+    height: 42px;
+    width: 42px;
+    background: #cd2e2d url("../images/arrow.png") 50% 50% no-repeat;
+}
+
+footer .container {
+    align-items: center;
+}
+
+footer .main-nav a {
+    display: inline-block;
+    margin-right: 19px;
+    padding: 25px 0;
+    color: #898989;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+footer .main-nav a:hover {
+    color: #cd2e2d;
+}
+
+.social-networks ul {
+    display: flex;
+}
+
+/*.vkontakte {*/
+/*background: url("../images/icon-vk.png") no-repeat;*/
+/*}*/
+/*.youtube {*/
+/*background: url("../images/icon-youtube.png") no-repeat;*/
+/*}*/
+/*.google {*/
+/*background: url("../images/icon-google.png") no-repeat;*/
+/*}*/
+/*.social-networks-item.facebook {*/
+/*background: url("../images/icon-fb.png") 50% 50% no-repeat;*/
+/*}*/
+/*.twitter {*/
+/*background: url("../images/icon-twitter.png") no-repeat;*/
+/*}*/
+
+/*.social-networks-item {*/
+/*display: inline-block;*/
+/*height: 50px;*/
+/*width: 50px;*/
+/*border-radius: 4px;*/
+/*margin-left: 2px;*/
+/*background: rgba(72, 76 ,77, 0.4);*/
+/*}*/
+
+.social-networks-item {
+    display: inline-block;
+    margin-left: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+}
+
+.social-networks-item.vkontakte {
+    background: rgba(72, 76, 77, 0.4) url("../images/icon-vk.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.youtube {
+    background: rgba(72, 76, 77, 0.4) url("../images/icon-youtube.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.google {
+    background: rgba(72, 76, 77, 0.4) url("../images/icon-google.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.facebook {
+    background: rgba(72, 76, 77, 0.4) url("../images/icon-fb.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.twitter {
+    background: rgba(72, 76, 77, 0.4) url("../images/icon-twitter.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.vkontakte:hover {
+    background: rgba(205, 46, 45, 1) url("../images/icon-vk.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.youtube:hover {
+    background: rgba(205, 46, 45, 1) url("../images/icon-youtube.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.google:hover {
+    background: rgba(205, 46, 45, 1) url("../images/icon-google.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.facebook:hover {
+    background: rgba(205, 46, 45, 1) url("../images/icon-fb.png") 50% 50% no-repeat;
+}
+
+.social-networks-item.twitter:hover {
+    background: rgba(205, 46, 45, 1) url("../images/icon-twitter.png") 50% 50% no-repeat;
+}
