@@ -10,6 +10,16 @@ h1 {
     font-size: 0;
 }
 
+h2 {
+    color: #e14a2b;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -85,3 +95,142 @@ a.lang-switch::after {
 .intro img {
     max-width: 100%;
 }
+
+/***** main-content *****/
+
+.main-content {
+    margin-bottom: 40px;
+    padding-top: 37px;
+}
+
+.main-content-nav {
+    width: 22%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.main-content-nav li {
+    position: relative;
+    padding-left: 48px;
+}
+
+.main-content-nav a {
+    display: inline-block;
+    color: #363a3b;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 38px;
+
+}
+
+.main-content-nav a::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    height: 26px;
+    width: 30px;
+}
+
+.main-content-nav a:hover {
+    color: #df4a2b;
+}
+
+.main-content-nav .photo-icon::before {
+    background: url("../images/icon-1.png") no-repeat;
+}
+
+.main-content-nav .video-icon::before {
+    background: url("../images/icon-2.png") no-repeat;
+}
+
+.main-content-nav .rada-icon::before {
+    background: url("../images/icon-3.png") no-repeat;
+}
+
+.main-content-nav .partners-icon::before {
+    background: url("../images/icon-4.png") no-repeat;
+}
+
+.main-content-nav .forum-icon::before {
+    background: url("../images/icon-5.png") no-repeat;
+}
+
+.latest-news {
+    width: 47%;
+}
+
+.latest-news h2,
+.aside-r h2 {
+    margin-bottom: 27px;
+}
+
+.latest-news-item {
+    margin-bottom: 35px;
+    border: 1px solid rgba(72, 76, 77, 0.1);
+    border-radius: 4px;
+}
+
+.latest-news-item img {
+    width: 100%;
+}
+
+.latest-news-item img,
+.gallery-item img,
+.video-item img {
+    margin-bottom: 10px;
+}
+
+.latest-news-item h3 {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #484c4d;
+}
+
+.latest-news-item h3+p {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #878c8d;
+}
+
+.latest-news-item-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid rgba(72, 76, 77, 0.1);
+    color: rgba(135, 140, 141, 0.8);
+    font-size: 12px;
+}
+
+.latest-news-item-info span::before {
+    content: url("../images/eye.png");
+    padding-right: 5px;
+}
+
+.gallery-item p,
+.video-item p {
+    padding-left: 15px;
+}
+
+.aside-r {
+    width: 23%;
+}
+
+.gallery {
+    margin-bottom: 34px;
+}
+
+.gallery-item,
+.video-item {
+    padding-bottom: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    color: #484c4d;
+    overflow: hidden;
+}
+
+.gallery-item img,
+.video-item img {
+    width: 100%;
+}
+
