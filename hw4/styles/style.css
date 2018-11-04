@@ -273,31 +273,6 @@ footer .main-nav a:hover {
     display: flex;
 }
 
-/*.vkontakte {*/
-/*background: url("../images/icon-vk.png") no-repeat;*/
-/*}*/
-/*.youtube {*/
-/*background: url("../images/icon-youtube.png") no-repeat;*/
-/*}*/
-/*.google {*/
-/*background: url("../images/icon-google.png") no-repeat;*/
-/*}*/
-/*.social-networks-item.facebook {*/
-/*background: url("../images/icon-fb.png") 50% 50% no-repeat;*/
-/*}*/
-/*.twitter {*/
-/*background: url("../images/icon-twitter.png") no-repeat;*/
-/*}*/
-
-/*.social-networks-item {*/
-/*display: inline-block;*/
-/*height: 50px;*/
-/*width: 50px;*/
-/*border-radius: 4px;*/
-/*margin-left: 2px;*/
-/*background: rgba(72, 76 ,77, 0.4);*/
-/*}*/
-
 .social-networks-item {
     display: inline-block;
     margin-left: 2px;
@@ -326,7 +301,7 @@ footer .main-nav a:hover {
     background: rgba(72, 76, 77, 0.4) url("../images/icon-twitter.png") 50% 50% no-repeat;
 }
 
-.social-networks-item.vkontakte:hover {
+.social-networks-item:hover {
     background: rgba(205, 46, 45, 1) url("../images/icon-vk.png") 50% 50% no-repeat;
 }
 
