@@ -31,6 +31,7 @@ h3 {
 
 header {
     position: relative;
+    z-index: 10;
     background: linear-gradient(to left, #bf1e2e, #f1592a);
     color: #fff;
 }
@@ -90,10 +91,118 @@ a.lang-switch::after {
 
 .intro {
     margin-top: -30px;
-
+    position: relative;
 }
+
 .intro img {
     max-width: 100%;
+}
+
+.intro .slider {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/slider.png");
+    height: 92px;
+    width: 92px;
+}
+
+.slider .day {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16.5px;
+    font-weight: 100;
+}
+
+.slider .date {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.slider .month {
+    border-top: 1px solid #7d7c7c;
+    padding-top: 4px;
+    color: #7d7c7c;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.slider .active-item {
+    background: url("../images/slider-active.png");
+}
+
+.slider .active-item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 92px;
+    width: 463px;
+    padding: 10px 20px;
+    background: url("../images/slider-active-info.png");
+    color: #fff;
+}
+
+.active-item-info .performance-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slider .active-item-info .title {
+    font-size: 27.5px;
+    font-weight: 100;
+}
+
+.slider .active-item-info .description {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.active-item-info .btn {
+    align-self: flex-end;
+    padding: 10px 11px;
+    background: #484c4d;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.arrow {
+    align-self: center;
+    height: 36px;
+    width: 36px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.arrow-left {
+    margin-right: 2px;
+    background: url("../images/arrow-left.png") 50% 50% no-repeat,
+    linear-gradient(to top, #4c4c4c, #505050);
+}
+
+.arrow-right {
+    margin-left: 2px;
+    background: url("../images/arrow-right.png") 50% 50% no-repeat,
+    linear-gradient(to top, #4c4c4c, #505050);
+}
+
+.arrow-left:hover {
+    background: url("../images/arrow-left.png") 50% 50% no-repeat,
+    linear-gradient(to top, #dd492a, #e54b2b);
+}
+.arrow-right:hover {
+    background: url("../images/arrow-right.png") 50% 50% no-repeat,
+    linear-gradient(to top, #dd492a, #e54b2b);
 }
 
 /***** main-content *****/
