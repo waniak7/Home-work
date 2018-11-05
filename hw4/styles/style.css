@@ -94,13 +94,17 @@ a.lang-switch::after {
     display: flex;
 }
 
-.slider-item {
+.slider-item,
+.slider .active-item .active-item-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../images/slider.png");
     height: 92px;
     width: 92px;
+}
+
+.slider-item {
+    background: url("../images/slider.png");
 }
 
 .slider .day {
@@ -125,37 +129,40 @@ a.lang-switch::after {
 }
 
 .slider .active-item {
+    display: flex;
+    height: 92px;
+    width: 552px;
     background: url("../images/slider-active.png");
 }
 
-.slider .active-item-info {
+.slider .active-item .performance-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 92px;
     width: 463px;
     padding: 10px 20px;
-    background: url("../images/slider-active-info.png");
     color: #fff;
 }
 
-.active-item-info .performance-info {
+.slider .active-item .detailed-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: left;
 }
 
-.slider .active-item-info .title {
+.slider .detailed-info .title {
     font-size: 27.5px;
     font-weight: 100;
 }
 
-.slider .active-item-info .description {
+.slider .detailed-info .description {
     font-size: 13px;
     font-weight: 100;
 }
 
-.active-item-info .btn {
+.performance-info .btn {
     align-self: flex-end;
     padding: 10px 11px;
     background: #484c4d;
