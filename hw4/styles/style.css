@@ -1,12 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font: 14px "Roboto", sans-serif;
-}
-
-h1 {
+.top-header h1 a {
     font-size: 0;
 }
 
@@ -29,14 +21,12 @@ h3 {
 
 /***** header *****/
 
-header {
-    position: relative;
-    z-index: 10;
+.top-header {
     background: linear-gradient(to left, #bf1e2e, #f1592a);
     color: #fff;
 }
 
-header .container {
+.top-header .container {
     padding-right: 14px;
 }
 
@@ -50,22 +40,21 @@ header .container {
     display: flex;
 }
 
-header .main-nav a {
+.top-header .main-nav a {
     display: inline-block;
     padding: 31px 11px 30px;
     border-top: 3px solid transparent;
     color: #fff;
-    font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
 }
 
-header .main-nav a:hover {
+.top-header .main-nav a:hover {
     background: #fff;
     color: #2a2a2a;
 }
 
-header .main-nav a.active {
+.top-header .main-nav a.active {
     border-top: 3px solid #fff;
 }
 
@@ -73,7 +62,6 @@ a.lang-switch {
     position: relative;
     margin: 34px 0 23px;
     color: #fff;
-    font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -90,7 +78,6 @@ a.lang-switch::after {
 /***** intro *****/
 
 .intro {
-    margin-top: -30px;
     position: relative;
     text-align: center;
 }
@@ -180,21 +167,27 @@ a.lang-switch::after {
 
 .arrow {
     align-self: center;
-    height: 36px;
-    width: 36px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 .arrow-left {
     margin-right: 2px;
+    height: 36px;
+    width: 36px;
     background: url("../images/arrow-left.png") 50% 50% no-repeat,
     linear-gradient(to top, #4c4c4c, #505050);
+    border: 0;
+    font-size: 0;
 }
 
 .arrow-right {
     margin-left: 2px;
+    height: 36px;
+    width: 36px;
     background: url("../images/arrow-right.png") 50% 50% no-repeat,
     linear-gradient(to top, #4c4c4c, #505050);
+    border: 0;
+    font-size: 0;
 }
 
 .arrow-left:hover {
@@ -339,26 +332,32 @@ a.lang-switch::after {
 
 /***** footer *****/
 
-.border-footer {
+.footer {
     position: relative;
+}
+
+.footer::before {
+    content: '';
+    display: block;
     height: 4px;
     background: linear-gradient(to left, #bf1e2e, #f1592a);
 }
 
-.scroll-up {
+.footer .container {
+    align-items: center;
+}
+
+.footer .scroll-up {
     position: absolute;
     right: 100px;
     top: -42px;
     height: 42px;
     width: 42px;
     background: #cd2e2d url("../images/arrow.png") 50% 50% no-repeat;
+    font-size: 0;
 }
 
-footer .container {
-    align-items: center;
-}
-
-footer .main-nav a {
+.footer .main-nav a {
     display: inline-block;
     margin-right: 19px;
     padding: 25px 0;
@@ -368,7 +367,7 @@ footer .main-nav a {
     text-transform: uppercase;
 }
 
-footer .main-nav a:hover {
+.footer .main-nav a:hover {
     color: #cd2e2d;
 }
 

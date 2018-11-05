@@ -1,4 +1,8 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+* {
+  box-sizing: border-box
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
 big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, 
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
 canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, 
@@ -24,7 +28,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  font: 12px "montserratregular", sans-serif;
+  font: 14px "Roboto", sans-serif;
   background: #ffffff;
   color: #808083
 }
@@ -97,14 +101,13 @@ img, fieldset {
 }
 
 a:link, a:visited {
-  font: 14px "montserratregular", sans-serif;
-  color: #3eb2a9;
+  font: 12px "Roboto", sans-serif;
+
   text-decoration: none
 }
 
 a:hover {
   text-decoration: none;
-  color: #009688
 }
 
 .float-r {
