@@ -1,0 +1,96 @@
+.intro {
+    height: 950px;
+    background: url("../images/intro-bg.png");
+    background-size: cover;
+    color: #fff;
+    padding-top: 41px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.main-container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+/***** header *****/
+
+.header {
+    align-items: center;
+    margin-bottom: 115px;
+}
+
+.logo {
+    height: 45px;
+    width: 121px;
+}
+
+.header h1 a {
+    font-size: 0;
+}
+
+.main-nav ul {
+    display: flex;
+    width: 413px;
+    justify-content: space-between;
+}
+
+.main-nav a {
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    text-decoration: line-through;
+}
+
+.intro .main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/***** slogan *****/
+
+.slogan {
+    padding: 95px 0 0 62px;
+}
+
+h2 {
+    font-size: 72px;
+}
+
+.slogan h2 {
+    letter-spacing: 2.9px;
+    margin-bottom: 43px;
+}
+
+.slogan p {
+    font-size: 24px;
+    width: 548px;
+}
+
+.slogan-logo {
+    font-weight: 900;
+}
+
+.slogan .btn {
+    display: inline-block;
+    margin-top: 101px;
+    padding: 17px 51px 19px 52px;
+    background: #fff;
+    color: #eb402c;
+    border-radius: 25px;
+    text-shadow: 0 10px 30px rgba(223, 27, 61, 0.3);
+    box-shadow: 0 10px 40px 0 rgba(54, 54, 54, 0.15);
+}
+
+.intro-img {
+    height: 821px;
+    width: 479px;
+}

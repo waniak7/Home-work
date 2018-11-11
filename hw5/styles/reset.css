@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, 
+mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 18px "Lato", sans-serif;
+  background: #ffffff;
+  color: #808080
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, main {
+  display: block
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: '';
+  content: none
+}
+
+ins {
+  text-decoration: none
+}
+
+mark {
+  font-style: italic;
+  font-weight: bold
+}
+
+del {
+  text-decoration: line-through
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0
+}
+
+select, input {
+  font-size: 12px;
+  vertical-align: middle
+}
+
+textarea {
+  font-size: 12px;
+  vertical-align: top
+}
+
+:focus {
+  outline: none
+}
+
+input[type=submit] {
+  cursor: pointer
+}
+
+img, fieldset {
+  border: 0
+}
+
+a:link, a:visited {
+  font: 18px "Lato", sans-serif;
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.float-r {
+  float: right !important
+}
+
+.float-l {
+  float: left !important
+}
+
+.no-float {
+  float: none !important
+}
+
+.no-border {
+  border: 0 !important
+}
+
+.no-bg {
+  background: none !important
+}
+
+.no-margin {
+  margin: 0 !important
+}
+
+.no-padding {
+  padding: 0 !important
+}
+
+.no-display {
+  display: none !important
+}
+
+.display {
+  display: block !important
+}
+
+.inline {
+  display: inline !important
+}
+
+.overflow {
+  overflow: hidden !important
+}
+
+.align-r {
+  text-align: right !important
+}
+
+.align-l {
+  text-align: left !important
+}
+
+.align-c {
+  text-align: center !important
+}
+
+.clear {
+  clear: both
+}
+
+.u-clearfix::before, .u-clearfix::after {
+  content: " ";
+  display: table
+}
+
+.u-clearfix::after {
+  clear: both
+}
