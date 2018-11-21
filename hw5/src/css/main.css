@@ -150,8 +150,10 @@ h3 {
 
 /***** Feedback *****/
 .feedback {
-  padding: 95px 60px 242px;
+  padding: 95px 0 242px;
   border-top: 1px solid #e0e0e0; }
+  .feedback .main-container {
+    padding: 0 60px; }
   .feedback h3 {
     margin-bottom: 128px;
     text-align: center; }
