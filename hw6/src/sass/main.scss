@@ -319,7 +319,7 @@ h3 {
     color: rgba(255, 255, 255, 0.6);
     line-height: 28px;
     font-size: 16px;
-    max-width: 255px;
+    width: 255px;
     height: 85px;
     overflow: hidden;
   }
@@ -602,9 +602,13 @@ h3 {
   .offers {
     .main-container {
       flex-direction: column;
-      //padding: 20px 0;
+      padding: 0 10px;
       height: auto;
       position: relative;
+    }
+
+    li {
+      width: 100%;
     }
 
     .center {
@@ -621,9 +625,11 @@ h3 {
     .left li,
     .right li{
       text-align: center;
-      padding-top: 50px;
-      padding-right: 0;
-      padding-left: 0;
+      padding: 50px 0 0;
+
+      p {
+        width: 100%;
+      }
     }
 
     .left .conversation::after,

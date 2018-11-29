@@ -280,7 +280,7 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
   line-height: 28px;
   font-size: 16px;
-  max-width: 255px;
+  width: 255px;
   height: 85px;
   overflow: hidden; }
 
@@ -497,8 +497,11 @@ h3 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 0 10px;
     height: auto;
     position: relative; }
+  .offers li {
+    width: 100%; }
   .offers .center {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
@@ -511,9 +514,10 @@ h3 {
   .offers .left li,
   .offers .right li {
     text-align: center;
-    padding-top: 50px;
-    padding-right: 0;
-    padding-left: 0; }
+    padding: 50px 0 0; }
+    .offers .left li p,
+    .offers .right li p {
+      width: 100%; }
   .offers .left .conversation::after,
   .offers .left .free-call::after {
     right: 50%;
@@ -561,6 +565,8 @@ h3 {
     width: 100%;
     margin-bottom: 15px; } }
 
-@media (max-width: 575.98px) and (max-width: 399.98px) {
+@media (max-width: 575.98px) and (max-width: 420.98px) {
+  .intro {
+    height: 650px; }
   .footer-nav ul a {
     font-size: 14px; } }
