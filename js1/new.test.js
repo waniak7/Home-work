@@ -25,6 +25,12 @@ test('test_string', () => {
     expect('     hello    '.trim()).toEqual('hello');
     expect('monkey'.charAt(3)).toEqual('k');
     expect('a, b, c, d'.split()).toEqual(['a, b, c, d']);
+    expect('cat dog monkey'.startsWith('dog')).toEqual(false);
+    expect('cat dog monkey'.startsWith('dog', 4)).toEqual(true);
+    expect('cat dog monkey'.endsWith('monkey')).toEqual(true);
+    expect('cat dog monkey'.endsWith('dog', 7)).toEqual(true);
+    expect('cat dog monkey'.includes('dog')).toEqual(true);
+    expect('cat dog monkey'.repeat(2)).toEqual('cat dog monkeycat dog monkey');
 });
 
 test('test_numbers', () => {
@@ -45,6 +51,10 @@ test('test_numbers', () => {
     expect(isNaN('Hello')).toEqual(true);
     expect(isNaN(parseInt('Hello 10 cats'))).toEqual(true);
     expect(7 * 'cat').toEqual(NaN);
+    expect(Number.isFinite(7)).toEqual(true);
+    expect(Number.isFinite(NaN)).toEqual(false);
+    expect(Number.isFinite('cat')).toEqual(false);
+    expect(Number.isInteger(7.7)).toEqual(false);
 });
 
 test('test_arrays', () => {
@@ -97,5 +107,49 @@ test('test_arrays', () => {
 
     let arr3 = ['Bayern', 'Atletico']
     expect(arr1.concat(arr2, arr3)).toEqual(['Real', 'Liverpool', 'Barcelona', 'Sevilla', 'Bayern', 'Atletico']);
+
+    let arr4 = [10, -5, 1, -4, 0, 11, -12, -7];
+
+    let arr5 = arr4.map(function (el) {
+        return el * 2;
+    });
+
+    expect(arr5).toEqual([20, -10, 2, -8, 0, 22, -24, -14]);
+
+    let arr6 = arr4.filter(function (el) {
+        return el > 0;
+    });
+
+    expect(arr6).toEqual([10, 1, 11]);
+
+    function isNegative(el) {
+        return el < 0;
+    }
+
+    expect(arr4.every(isNegative)).toEqual(false);
+    expect(arr4.some(isNegative)).toEqual(true);
+});
+
+test('test_compare_operators', () => {
+    expect(7 > 1).toEqual(true);
+    expect(7 + 7 * 7).toEqual(56);
+    expect(7 != 7).toEqual(false);
+    expect(7 > true).toEqual(true);
+    expect(false < true).toEqual(true);
+
+});
+
+test('test_equality_comparison_algorithm', () => {
+    expect(true + false).toEqual(1);
+    expect(true == 1).toEqual(true);
+    expect(null >= 0).toEqual(true);
+    expect(null > 0).toEqual(false);
+    expect(10/"5").toEqual(2);
+    expect(null == '').toEqual(false);
+
+    let x = 7;
+    expect(x == "7").toEqual(true);
+    expect(x !== "7").toEqual(true);
+
 });
 
