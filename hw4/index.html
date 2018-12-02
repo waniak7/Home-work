@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Театр імені Т. Г. Шевченка</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- header -->
+<header class="top-header">
+    <div class="container">
+        <h1>
+            <a href="#">
+                <img src="images/logo.png" alt="Театр імені Т. Г. Шевченка" class="logo">
+                Театр імені Т. Г. Шевченка
+            </a>
+        </h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">Головна</a></li>
+                <li><a href="#">Афіша</a></li>
+                <li><a href="#">Репертуар</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Про театр</a></li>
+                <li><a href="#">Персоналії</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Фестивалі</a></li>
+            </ul>
+        </nav>
+        <a href="" class="lang-switch">
+            Укр
+        </a>
+    </div>
+</header>
+
+<!-- intro -->
+<div class="intro">
+    <img src="images/intro.jpg" alt="Афіша вистави">
+    <ul class="slider">
+        <li class="arrow">
+            <button class="arrow-left">arrow left</button>
+        </li>
+        <li class="slider-item">
+            <span class="day">Нд</span>
+            <span class="date">21</span>
+            <span class="month">лютого</span>
+        </li>
+        <li class="slider-item">
+            <span class="day">Пн</span>
+            <span class="date">22</span>
+            <span class="month">лютого</span>
+        </li>
+        <li class="active-item">
+            <div class="active-item-info">
+                <span class="day">Пн</span>
+                <span class="date">22</span>
+                <span class="month">лютого</span>
+            </div>
+            <div class="performance-info">
+                <div class="detailed-info">
+                    <span class="title">Сад гетсиманський</span>
+                    <p class="description">
+                        Народна трагедія на 2 дії <br>
+                        Тривалість вистави 2 год 20 хв.
+                    </p>
+                </div>
+                <a href="" class="btn">Купити квиток</a>
+                <img src="images/qr-code.png" alt="qr-code">
+            </div>
+        </li>
+        <li class="slider-item">
+            <span class="day">Чт</span>
+            <span class="date">25</span>
+            <span class="month">лютого</span>
+        </li>
+        <li class="slider-item">
+            <span class="day">Пт</span>
+            <span class="date">26</span>
+            <span class="month">лютого</span>
+        </li>
+        <li class="arrow">
+            <button class="arrow-right"> arrow right</button>
+        </li>
+    </ul>
+</div>
+
+<!-- main-content -->
+<div class="main-content container">
+    <nav class="main-content-nav">
+        <ul>
+            <li><a class="photo-icon" href="#">Фотоархів</a></li>
+            <li><a class="video-icon" href="#">Відеоархів</a></li>
+            <li><a class="rada-icon" href="#">Піклувальна рада</a></li>
+            <li><a class="partners-icon" href="#">Партнери</a></li>
+            <li><a class="forum-icon" href="#">Форум</a></li>
+        </ul>
+    </nav>
+    <main class="latest-news">
+        <h2>Новини</h2>
+        <article class="latest-news-item">
+            <img src="images/article.png" alt="image">
+            <h3>Назва новини</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            </p>
+            <div class="latest-news-item-info">
+                <time datetime="2015-02-02">02.02.2015</time>
+                <span>115</span>
+            </div>
+        </article>
+        <article class="latest-news-item">
+            <img src="images/article.png" alt="image">
+            <h3>Назва новини</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            </p>
+            <div class="latest-news-item-info">
+                <time datetime="2015-02-02">02.02.2015</time>
+                <span>115</span>
+            </div>
+        </article>
+        <article class="latest-news-item">
+            <img src="images/article.png" alt="image">
+            <h3>Назва новини</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            </p>
+            <div class="latest-news-item-info">
+                <time datetime="2015-02-02">02.02.2015</time>
+                <span>115</span>
+            </div>
+        </article>
+    </main>
+    <aside class="aside-r">
+        <ul>
+            <li class="gallery">
+                <h2>Галерея</h2>
+                <div class="gallery-item">
+                    <img src="images/gallery-photo.jpg" alt="photo">
+                    <p>Lorem ipsum dolor sit amet, dolor sit amet elit.</p>
+                </div>
+            </li>
+            <li class="video">
+                <h2>Відео</h2>
+                <div class="video-item">
+                    <img src="images/video.jpg" alt="video">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </li>
+        </ul>
+    </aside>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <a href="#" class="scroll-up">scroll up</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Афіша</a></li>
+                <li><a href="#">Репертуар</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Про театр</a></li>
+                <li><a href="#">Персоналії</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Фестивалі</a></li>
+            </ul>
+        </nav>
+        <div class="social-networks">
+            <ul>
+                <li><a class="social-networks-item vkontakte" href="#"></a></li>
+                <li><a class="social-networks-item youtube" href="#"></a></li>
+                <li><a class="social-networks-item google" href="#"></a></li>
+                <li><a class="social-networks-item facebook" href="#"></a></li>
+                <li><a class="social-networks-item twitter" href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
